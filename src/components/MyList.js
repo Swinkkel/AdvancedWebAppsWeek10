@@ -9,7 +9,6 @@ function MyList({ header, items}) {
                 {items.map(item => (
                     <li>{item.text}</li>
                 ))}
-                <li></li>
             </ol>
         </div>
     );
