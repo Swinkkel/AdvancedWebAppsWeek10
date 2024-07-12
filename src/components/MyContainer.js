@@ -17,7 +17,7 @@ function MyContainer() {
         setNewItemText('');
     }
 
-    const toggleItemClick = (id) => {
+    const updateItem = (id) => {
         setItems(items.map(item => 
             item.id === id ? { ...item, clicked: !item.clicked } : item
         ));
@@ -28,7 +28,7 @@ function MyContainer() {
             <h1>My Container</h1>
             <textarea value = {newItemText} onChange={(e) => setNewItemText(e.target.value)} placeholder='Enter new item text ' />
             <button onClick={addItem}>Add Item</button>
-            <MyList header = "My List" items={items} onItemClick={toggleItemClick} />
+            <MyList header = "My List" items={items} onItemClick={updateItem} />
         </div>
     );
 }
