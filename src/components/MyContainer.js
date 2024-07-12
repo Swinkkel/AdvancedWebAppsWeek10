@@ -3,6 +3,8 @@ import MyList from './MyList'
 
 function MyContainer() {
     const [items, setItems] = useState([
+        {id: "1", text: "item 1", clicked: false},
+        {id: "2", text: "item 2", clicked: false}
     ])
 
     const [newItemText, setNewItemText] = useState('');
