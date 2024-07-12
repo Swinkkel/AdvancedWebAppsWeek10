@@ -7,7 +7,7 @@ function MyList({ header, items, onItemClick}) {
             <h1>{header}</h1>
             <ol>
                 {items.map(item => (
-                    <li key={item.id} onClick={() => onItemClick(item.id)} style={{ textDecoration: item.clicked ? 'line-through' : 'none'}} >
+                    <li key={item.id} onClick={() => onItemClick(item.id)} style={{ textDecoration: item.clicked ? 'line-through' : ''}} >
                         {item.text}
                     </li>
                 ))}
